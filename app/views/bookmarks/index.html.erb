@@ -1,1 +1,12 @@
-<h2>Bookmarks of "" </h2>
+<h2>Bookmarks of "<%= @list.name %>" </h2>
+<ul>
+  <% @bookmarks.each do |f| %>
+    <% if f.list_id = @list.id %>
+      <li><%= f.comment %> - <%= Movie.find(f.movie_id).title %> -
+          <%= link_to "Delete bookmark", bookmark_path(f.id) %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+<br>
+<%= link_to "Lists", lists_path %>
