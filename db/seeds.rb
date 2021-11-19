@@ -26,6 +26,6 @@
 #   )
 # end
 
-List.create(name: 'Drama')
-List.create(name: 'All time favorites')
-List.create(name: 'Girl power')
+# List.create(name: 'Drama')
+# List.create(name: 'All time favorites')
+# List.create(name: 'Girl power')
