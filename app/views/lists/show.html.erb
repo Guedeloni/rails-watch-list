@@ -1,8 +1,8 @@
 <h2>My list <%= @list.name %> </h2>
 <ul>
-  <% @list.bookmarks.each do |f| %>
-    <li><%= Movie.find(f.movie_id).title %> - <%= f.comment %>
-        <%= image_tag Movie.find(f.movie_id).poster_url, alt: "Poster du film", width: 200 %>
+  <% @list.bookmarks.each do |b| %>
+    <li><%= b.movie.title %> - <%= b.comment %>
+        <%= image_tag b.movie.poster_url, alt: "Poster du film", width: 200 %>
     </li>
   <% end %>
 </ul>
