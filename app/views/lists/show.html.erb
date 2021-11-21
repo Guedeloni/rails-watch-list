@@ -2,7 +2,7 @@
 <ul>
   <% @list.bookmarks.each do |b| %>
     <li><%= b.movie.title %> - <%= b.comment %>
-        <%= image_tag b.movie.poster_url, alt: "Poster du film", width: 200 %>
+        <%= image_tag 'https://image.tmdb.org/t/p/w500/'+b.movie.poster_url, alt: "Poster du film", width: 200 %>
     </li>
   <% end %>
 </ul>

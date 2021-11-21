@@ -13,13 +13,10 @@
   </head>
 
   <body>
-  <div class="banner" alt='Néons de cinéma en nocturne'>
-    <div class="container">
-      <h1> L'appli ciné...</h1>
-      <p> aux fonctionnalités <strong>bien floues</strong> ! </p>
+    <div class='menu'>
+      <p><%= link_to 'My lists', root_path %></p>
+      <p><%= link_to 'Add list', new_list_path %></p>
     </div>
-  </div>
-
     <%= yield %>
   </body>
 </html>

@@ -1,5 +1,10 @@
-<h2>My lists</h2>
-<ul>
+<div class="banner" alt='Néons de cinéma en nocturne'>
+  <div class="container">
+    <h1> L'appli ciné...</h1>
+    <h2> aux fonctionnalités <strong>bien floues</strong> ! </h2>
+  </div>
+</div>
+<ul class="container">
   <% @lists.each do |list| %>
   <li> <%= link_to list.name, list_path(list.id) %> </li>
   <% end %>

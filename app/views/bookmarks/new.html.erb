@@ -1,6 +1,6 @@
 <h2>Add a bookmark for "<%= @list.name %>" </h2>
 <%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
+  <%= f.rich_text_area :comment %>
   <%= f.association :movie, collection: Movie.all.order(:title),
                             prompt: 'Choose a movie' %>
   <%= f.submit 'Add' %>

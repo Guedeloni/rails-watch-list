@@ -13,6 +13,7 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.new(bookmark_params)
     @list = List.find(params[:list_id])
     @bookmark.list_id = @list.id
+    p @bookmark
     if @bookmark.save
       redirect_to list_bookmarks_path(@list)
     else
